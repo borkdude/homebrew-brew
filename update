@@ -2,8 +2,8 @@
 
 tag=$(curl --silent "https://api.github.com/repos/borkdude/clj-kondo/tags" | jq -r '.[0].name')
 version=${tag:1}
-linux="clj-kondo-$version-linux-amd64.tar.gz"
-macos="clj-kondo-$version-macos-amd64.tar.gz"
+linux="clj-kondo-$version-linux-amd64.zip"
+macos="clj-kondo-$version-macos-amd64.zip"
 linux_sha=$(sha256sum "$linux" | cut -f 1 -d " ")
 macos_sha=$(sha256sum "$macos" | cut -f 1 -d " ")
 

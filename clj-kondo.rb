@@ -5,10 +5,10 @@ class CljKondo < Formula
   version "2019.05.12-alpha"
 
   if OS.linux?
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.05.12-alpha/clj-kondo-2019.05.12-alpha-linux-amd64.tar.gz"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.05.12-alpha/clj-kondo-2019.05.12-alpha-linux-amd64.zip"
     sha256 "a618f839ec52d997f1f3804654f314186d5daccf0a85681314bbabcefd66c2cb"
   else
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.05.12-alpha/clj-kondo-2019.05.12-alpha-macos-amd64.tar.gz"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.05.12-alpha/clj-kondo-2019.05.12-alpha-macos-amd64.zip"
     sha256 "6c1ce96e5fecaaa9912e0ad127b3e9499131caf38ab47b4d0f4a1177f4afc64d"
   end
 

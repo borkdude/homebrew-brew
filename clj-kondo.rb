@@ -2,14 +2,14 @@ class CljKondo < Formula
 
   desc "A minimal and opinionated linter for Clojure code that sparks joy."
   homepage "https://github.com/borkdude/clj-kondo"
-  version "2019.06.29-alpha"
+  version "2019.07.05-alpha"
 
   if OS.linux?
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.06.29-alpha/clj-kondo-2019.06.29-alpha-linux-amd64.zip"
-    sha256 "c4b008a93d5125e3aa4a77a2edea55a0feb9e153ff5be4161459f16a3a974842"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.07.05-alpha/clj-kondo-2019.07.05-alpha-linux-amd64.zip"
+    sha256 "2ae04dcada9c16bdd8c6ff9858961a1aebf2d907bf87fa6d69988ac4a81dfcd6"
   else
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.06.29-alpha/clj-kondo-2019.06.29-alpha-macos-amd64.zip"
-    sha256 "f47a37873e266a0f632cffa18d48ff8eb105718a98e2849565833e77bb4a8084"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2019.07.05-alpha/clj-kondo-2019.07.05-alpha-macos-amd64.zip"
+    sha256 "3e12b93a074e26d4c456de1f6f65db3dec18d27987e7aa505f817892fe17a380"
   end
 
   bottle :unneeded

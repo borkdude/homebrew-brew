@@ -1,0 +1,21 @@
+class Jet < Formula
+
+  desc "Transform JSON into EDN into Transit."
+  homepage "https://github.com/borkdude/jet"
+  version "${VERSION}"
+
+  if OS.linux?
+    url "https://github.com/borkdude/jet/releases/download/v${VERSION}/jet-${VERSION}-linux-amd64.zip"
+    sha256 "${LINUX_SHA}"
+  else
+    url "https://github.com/borkdude/jet/releases/download/v${VERSION}/jet-${VERSION}-macos-amd64.zip"
+    sha256 "${MACOS_SHA}"
+  end
+
+  bottle :unneeded
+
+  def install
+    bin.install "jet"
+  end
+
+end

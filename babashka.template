@@ -1,0 +1,21 @@
+class Babashka < Formula
+
+  desc "A pure, fast and limited version of Clojure in Clojure for shell scripting."
+  homepage "https://github.com/borkdude/babashka"
+  version "${VERSION}"
+
+  if OS.linux?
+    url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-amd64.zip"
+    sha256 "${LINUX_SHA}"
+  else
+    url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-amd64.zip"
+    sha256 "${MACOS_SHA}"
+  end
+
+  bottle :unneeded
+
+  def install
+    bin.install "bb"
+  end
+
+end

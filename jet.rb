@@ -2,14 +2,14 @@ class Jet < Formula
 
   desc "Transform JSON into EDN into Transit."
   homepage "https://github.com/borkdude/jet"
-  version "0.0.7"
+  version "0.0.8"
 
   if OS.linux?
-    url "https://github.com/borkdude/jet/releases/download/v0.0.7/jet-0.0.7-linux-amd64.zip"
-    sha256 "6992527d14251d32d5827f55c30dbaf20d5df9e6109a9777cbfe4c1e7f7ef4db"
+    url "https://github.com/borkdude/jet/releases/download/v0.0.8/jet-0.0.8-linux-amd64.zip"
+    sha256 "58f8cdb5a18897a41326298ffef66efae52e688ce358553a84e30e7df36867d3"
   else
-    url "https://github.com/borkdude/jet/releases/download/v0.0.7/jet-0.0.7-macos-amd64.zip"
-    sha256 "aabfd44fac21dc66af6fc4382df68d3dac947ad90fd73bc187512e60d9bf830d"
+    url "https://github.com/borkdude/jet/releases/download/v0.0.8/jet-0.0.8-macos-amd64.zip"
+    sha256 "960e2f20b704f9fa8b007722353144c901ac7b3deaad7e448c1967d2f2ed558a"
   end
 
   bottle :unneeded

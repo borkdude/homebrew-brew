@@ -2,14 +2,14 @@ class Babashka < Formula
 
   desc "A pure, fast and limited version of Clojure in Clojure for shell scripting."
   homepage "https://github.com/borkdude/babashka"
-  version "0.0.10"
+  version "0.0.11"
 
   if OS.linux?
-    url "https://github.com/borkdude/babashka/releases/download/v0.0.10/babashka-0.0.10-linux-amd64.zip"
-    sha256 "6567c354cde5c7b53da36c92fc72d593b77294be7c471cf6121ecacd2714493a"
+    url "https://github.com/borkdude/babashka/releases/download/v0.0.11/babashka-0.0.11-linux-amd64.zip"
+    sha256 "82999da1c64aa00adcbdb53ffff4df11fd8d4e527dc81a2e09fd9668de48aa13"
   else
-    url "https://github.com/borkdude/babashka/releases/download/v0.0.10/babashka-0.0.10-macos-amd64.zip"
-    sha256 "de4dbb5f0e34abda1c77624245bfc32ba74eb75749f0407b8183a93def53f7a7"
+    url "https://github.com/borkdude/babashka/releases/download/v0.0.11/babashka-0.0.11-macos-amd64.zip"
+    sha256 "135a9e7b0924fe3c7ff96b817b8938355426eb68466058631552dc3f33a67022"
   end
 
   bottle :unneeded

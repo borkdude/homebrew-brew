@@ -1,6 +1,6 @@
 class Babashka < Formula
 
-  desc "A pure, fast and limited version of Clojure in Clojure for shell scripting."
+  desc "A Clojure babushka for the grey areas of Bash."
   homepage "https://github.com/borkdude/babashka"
   version "${VERSION}"
 

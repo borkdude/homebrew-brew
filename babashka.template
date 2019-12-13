@@ -16,7 +16,10 @@ class Babashka < Formula
 
   def install
     bin.install "bb"
-    bin.install "bbk"
+
+# maybe in a future release:
+#    bin.install "bbk"
+
   end
 
 end

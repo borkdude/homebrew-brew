@@ -1,4 +1,4 @@
 *.tar.gz
 *.zip
 *.jar
-reflection.json
+*-reflection.json

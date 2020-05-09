@@ -1,7 +1,7 @@
 class PodBabashkaHsqldb < Formula
 
   desc "Babashka pod for HSQLDB."
-  homepage "https://github.com/borkdude/pod-babashka-hsqldb"
+  homepage "https://github.com/babashka/pod-babashka-hsqldb"
   version "${VERSION}"
 
   if OS.linux?

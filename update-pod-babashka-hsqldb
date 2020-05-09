@@ -1,6 +1,6 @@
 #!/usr/bin/env /bin/bash
 
-tag=$(curl --silent "https://api.github.com/repos/borkdude/pod-babashka-hsqldb/tags" | jq -r '.[0].name')
+tag=$(curl --silent "https://api.github.com/repos/babashka/pod-babashka-hsqldb/tags" | jq -r '.[0].name')
 version=${tag:1}
 linux="pod-babashka-hsqldb-$version-linux-amd64.zip"
 macos="pod-babashka-hsqldb-$version-macos-amd64.zip"

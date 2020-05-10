@@ -1,4 +1,4 @@
-class PodBabashkaHsqldb < Formula
+class PodBabashkaFilewatcher < Formula
 
   desc "Babashka pod for HSQLDB."
   homepage "https://github.com/babashka/pod-babashka-hsqldb"

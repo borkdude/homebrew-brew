@@ -6,10 +6,10 @@ class PodBabashkaFilewatcher < Formula
 
   if OS.linux?
     url "https://github.com/babashka/pod-babashka-filewatcher/releases/download/v0.0.1-SNAPSHOT/pod-babashka-filewatcher-0.0.1-SNAPSHOT-linux-amd64.zip"
-    sha256 "2503baf81771e6cdd7aa91caefca35c0528ffdc98875dd5fd612e0b877c5bf83"
+    sha256 "e4a7a509a40bdb3c13f8ab9bbc59c693f08b53b5844c72d2cadc2498fd70d8cc"
   else
     url "https://github.com/babashka/pod-babashka-filewatcher/releases/download/v0.0.1-SNAPSHOT/pod-babashka-filewatcher-0.0.1-SNAPSHOT-macos-amd64.zip"
-    sha256 "4829b7c64b90141376baac6896e4f6458b372a62da6addcf4f4b2e65e7801c5f"
+    sha256 "6cff970eaed1fadaddd5d9f7ade3d82df78e4b656c74629016bbf3bcc5a2163c"
   end
 
   bottle :unneeded

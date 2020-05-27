@@ -1,21 +1,21 @@
-class PodBabashkaHsqldb < Formula
+class PodBabashkaPostgresql < Formula
 
-  desc "Babashka pod for HSQLDB."
-  homepage "https://github.com/babashka/pod-babashka-hsqldb"
+  desc "Babashka pod for PostgresQL."
+  homepage "https://github.com/babashka/babashka-sql-pods"
   version "${VERSION}"
 
   if OS.linux?
-    url "https://github.com/borkdude/pod-babashka-hsqldb/releases/download/v${VERSION}/pod-babashka-hsqldb-${VERSION}-linux-amd64.zip"
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v${VERSION}/pod-babashka-postgresql-${VERSION}-linux-amd64.zip"
     sha256 "${LINUX_SHA}"
   else
-    url "https://github.com/borkdude/pod-babashka-hsqldb/releases/download/v${VERSION}/pod-babashka-hsqldb-${VERSION}-macos-amd64.zip"
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v${VERSION}/pod-babashka-postgresql-${VERSION}-macos-amd64.zip"
     sha256 "${MACOS_SHA}"
   end
 
   bottle :unneeded
 
   def install
-    bin.install "pod-babashka-hsqldb"
+    bin.install "pod-babashka-postgresql"
 
   end
 

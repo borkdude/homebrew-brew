@@ -2,12 +2,12 @@
 
 tag=$(curl --silent "https://api.github.com/repos/babashka/babashka-sql-pods/tags" | jq -r '.[0].name')
 version=${tag:1}
-linux="pod-babashka-hsqldb-$version-linux-amd64.zip"
-macos="pod-babashka-hsqldb-$version-macos-amd64.zip"
+linux="pod-babashka-postgresql-$version-linux-amd64.zip"
+macos="pod-babashka-postgresql-$version-macos-amd64.zip"
 linux_sha=$(sha256sum "$linux" | cut -f 1 -d " ")
 macos_sha=$(sha256sum "$macos" | cut -f 1 -d " ")
 
 sed -e "s/\${i}/1/" -e "s/\${VERSION}/$version/g" \
     -e "s/\${LINUX_SHA}/$linux_sha/g" \
     -e "s/\${MACOS_SHA}/$macos_sha/g" \
-    pod-babashka-hsqldb.template > pod-babashka-hsqldb.rb
+    pod-babashka-postgresql.template > pod-babashka-postgresql.rb

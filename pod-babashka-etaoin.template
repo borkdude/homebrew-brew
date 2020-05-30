@@ -1,0 +1,22 @@
+class PodBabashkaEtaoin < Formula
+
+  desc "Babashka pod for Etaoin."
+  homepage "https://github.com/babashka/pod-babashka-etaoin"
+  version "${VERSION}"
+
+  if OS.linux?
+    url "https://github.com/babashka/pod-babashka-etaoin/releases/download/v${VERSION}/pod-babashka-etaoin-${VERSION}-linux-amd64.zip"
+    sha256 "${LINUX_SHA}"
+  else
+    url "https://github.com/babashka/pod-babashka-etaoin/releases/download/v${VERSION}/pod-babashka-etaoin-${VERSION}-macos-amd64.zip"
+    sha256 "${MACOS_SHA}"
+  end
+
+  bottle :unneeded
+
+  def install
+    bin.install "pod-babashka-etaoin"
+
+  end
+
+end

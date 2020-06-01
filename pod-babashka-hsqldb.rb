@@ -6,10 +6,10 @@ class PodBabashkaHsqldb < Formula
 
   if OS.linux?
     url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-hsqldb-0.0.1-SNAPSHOT-linux-amd64.zip"
-    sha256 "863a5758dc26d448580c32c64d2dbc1b368dc8227cc906e82c26c73252679393"
+    sha256 "71cb7abaddb71fbfd9a98a2d5eef67dd5f8f9c91b3558945b8519a41976a5852"
   else
     url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-hsqldb-0.0.1-SNAPSHOT-macos-amd64.zip"
-    sha256 "225c941422c37b477f680ecad59a4bab5c7fb908f5ffc7cdf1794b3806c73978"
+    sha256 "27042952e720025479274757dcabb8978db8463fa4101390333694e9732445b0"
   end
 
   bottle :unneeded

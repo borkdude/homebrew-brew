@@ -6,10 +6,10 @@ class PodBabashkaPostgresql < Formula
 
   if OS.linux?
     url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-postgresql-0.0.1-SNAPSHOT-linux-amd64.zip"
-    sha256 "57def839635a20d30ac34035d51ddf1d2e6fdc7f6d1fae1d573a49c1398cadbe"
+    sha256 "8351ce98f1695ca32e7788a2b6340d905ee7b6de99860d2ec210b35f9d883ede"
   else
     url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-postgresql-0.0.1-SNAPSHOT-macos-amd64.zip"
-    sha256 "3e5f9eac4a79c1c36ac2fd792b774e28527862d3d0da0424420803d95b6984b4"
+    sha256 "4bd50255d3367d0cd7c1c3a8dfff47b2cd6cdafdb04b0853c0146f98db5e0955"
   end
 
   bottle :unneeded

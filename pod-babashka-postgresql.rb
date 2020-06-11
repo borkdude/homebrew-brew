@@ -2,14 +2,14 @@ class PodBabashkaPostgresql < Formula
 
   desc "Babashka pod for PostgresQL."
   homepage "https://github.com/babashka/babashka-sql-pods"
-  version "0.0.1-SNAPSHOT"
+  version "0.0.1"
 
   if OS.linux?
-    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-postgresql-0.0.1-SNAPSHOT-linux-amd64.zip"
-    sha256 "8351ce98f1695ca32e7788a2b6340d905ee7b6de99860d2ec210b35f9d883ede"
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1/pod-babashka-postgresql-0.0.1-linux-amd64.zip"
+    sha256 "b1fb98486e3f7245e1e505f244410a4704dc1189778f4ff8ca6b9c66ba93f76e"
   else
-    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-postgresql-0.0.1-SNAPSHOT-macos-amd64.zip"
-    sha256 "4bd50255d3367d0cd7c1c3a8dfff47b2cd6cdafdb04b0853c0146f98db5e0955"
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1/pod-babashka-postgresql-0.0.1-macos-amd64.zip"
+    sha256 "de1482fddc058cf8d39c706832c5e474608407bd6ce1ec917980ffd9d61267d9"
   end
 
   bottle :unneeded

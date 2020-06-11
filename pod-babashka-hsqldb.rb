@@ -2,14 +2,14 @@ class PodBabashkaHsqldb < Formula
 
   desc "Babashka pod for HSQLDB."
   homepage "https://github.com/babashka/pod-babashka-hsqldb"
-  version "0.0.1-SNAPSHOT"
+  version "0.0.1"
 
   if OS.linux?
-    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-hsqldb-0.0.1-SNAPSHOT-linux-amd64.zip"
-    sha256 "71cb7abaddb71fbfd9a98a2d5eef67dd5f8f9c91b3558945b8519a41976a5852"
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1/pod-babashka-hsqldb-0.0.1-linux-amd64.zip"
+    sha256 "1645866bf89033448081e013d1705d4f089c41867efaa23ee0c4bce0ea551296"
   else
-    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1-SNAPSHOT/pod-babashka-hsqldb-0.0.1-SNAPSHOT-macos-amd64.zip"
-    sha256 "27042952e720025479274757dcabb8978db8463fa4101390333694e9732445b0"
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v0.0.1/pod-babashka-hsqldb-0.0.1-macos-amd64.zip"
+    sha256 "623dfc1f1b5ef3587037a2a82a1cc24b7d60a9da1d81ec40ec01ad857da4b63f"
   end
 
   bottle :unneeded

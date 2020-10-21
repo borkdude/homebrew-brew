@@ -2,14 +2,14 @@ class Babashka < Formula
 
   desc "A Clojure babushka for the grey areas of Bash."
   homepage "https://github.com/borkdude/babashka"
-  version "0.2.2"
+  version "0.2.3"
 
   if OS.linux?
-    url "https://github.com/borkdude/babashka/releases/download/v0.2.2/babashka-0.2.2-linux-amd64.zip"
-    sha256 "3650a8c7c51732aff2d1d0464e36240d2244709f1466b90142c2bf3b244843a7"
+    url "https://github.com/borkdude/babashka/releases/download/v0.2.3/babashka-0.2.3-linux-amd64.zip"
+    sha256 "a3aa1ce35cedbbd33361b2523befbd221e26d1fc8fa7db95f15d12ddabe33d94"
   else
-    url "https://github.com/borkdude/babashka/releases/download/v0.2.2/babashka-0.2.2-macos-amd64.zip"
-    sha256 "b1f1240d50ca7ffa300f25be8428f6d8de5e36014d624eb67f1a6f29ec70bdad"
+    url "https://github.com/borkdude/babashka/releases/download/v0.2.3/babashka-0.2.3-macos-amd64.zip"
+    sha256 "70298e0f3bb1f67f5e918134465c135d13fca90e2276c0789f29bed8c740ea5e"
   end
 
   bottle :unneeded

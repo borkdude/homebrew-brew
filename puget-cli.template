@@ -1,0 +1,21 @@
+class Puget < Formula
+
+  desc "Pretty-print EDN with colors."
+  homepage "https://github.com/borkdude/puget-cli"
+  version "${VERSION}"
+
+  if OS.linux?
+    url "https://github.com/borkdude/puget-cli/releases/download/v${VERSION}/puget-cli-${VERSION}-linux-amd64.zip"
+    sha256 "${LINUX_SHA}"
+  else
+    url "https://github.com/borkdude/puget-cli/releases/download/v${VERSION}/puget-cli-${VERSION}-macos-amd64.zip"
+    sha256 "${MACOS_SHA}"
+  end
+
+  bottle :unneeded
+
+  def install
+    bin.install "puget"
+  end
+
+end

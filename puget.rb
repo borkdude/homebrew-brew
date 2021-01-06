@@ -2,14 +2,14 @@ class Puget < Formula
 
   desc "Pretty-print EDN with colors."
   homepage "https://github.com/borkdude/puget-cli"
-  version "0.0.2"
+  version "0.0.3"
 
   if OS.linux?
-    url "https://github.com/borkdude/puget-cli/releases/download/v0.0.2/puget-cli-0.0.2-linux-amd64.zip"
-    sha256 "a7a92f4bccf712f8ddba6914cdd3aa14b621558bdd105a16b101b5f2f0700d04"
+    url "https://github.com/borkdude/puget-cli/releases/download/v0.0.3/puget-cli-0.0.3-linux-amd64.zip"
+    sha256 "1824217d5e28ad196b6e4b34fb16321e32045c2d1b045010ece67f66dcc304b2"
   else
-    url "https://github.com/borkdude/puget-cli/releases/download/v0.0.2/puget-cli-0.0.2-macos-amd64.zip"
-    sha256 "84ec70977701424128a9767c3b1f4f50ef40458a6c4ddf28e8315e692982411b"
+    url "https://github.com/borkdude/puget-cli/releases/download/v0.0.3/puget-cli-0.0.3-macos-amd64.zip"
+    sha256 "a8a7f573b61cc8ceb2d5080243fb4534ed5861a167d92905810357ea6dc089f6"
   end
 
   bottle :unneeded

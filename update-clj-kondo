@@ -1,6 +1,6 @@
 #!/usr/bin/env /bin/bash
 
-tag=$(curl --silent "https://api.github.com/repos/borkdude/clj-kondo/tags" | jq -r '.[0].name')
+tag=$(curl --silent "https://api.github.com/repos/clj-kondo/clj-kondo/tags" | jq -r '.[0].name')
 version=${tag:1}
 linux="clj-kondo-$version-linux-amd64.zip"
 macos="clj-kondo-$version-macos-amd64.zip"

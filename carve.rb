@@ -2,14 +2,14 @@ class Carve < Formula
 
   desc "Carve out the essentials of your Clojure app."
   homepage "https://github.com/borkdude/carve"
-  version "0.0.1"
+  version "0.0.2"
 
   if OS.linux?
-    url "https://github.com/borkdude/carve/releases/download/v0.0.1/carve-0.0.1-linux-amd64.zip"
-    sha256 "a0609bc276af6a54f315a1727b16fa2171e2175ab6a18ba1b9639936f83fe4e5"
+    url "https://github.com/borkdude/carve/releases/download/v0.0.2/carve-0.0.2-linux-amd64.zip"
+    sha256 "9d63dfcb28a1678176d0d945ff6f3006edb959b5d1aa6238b22aa8f42058e5b1"
   else
-    url "https://github.com/borkdude/carve/releases/download/v0.0.1/carve-0.0.1-macos-amd64.zip"
-    sha256 "2d86bebd8ad44a93f85f99fc66815d072cf968da44e6840f59d0219008328be1"
+    url "https://github.com/borkdude/carve/releases/download/v0.0.2/carve-0.0.2-macos-amd64.zip"
+    sha256 "ca69144d7a1190dd816c29d9011e6d4dcd2c19f7fa8605c12dbfe6cdaaf3df40"
   end
 
   bottle :unneeded

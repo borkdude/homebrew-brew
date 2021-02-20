@@ -1,0 +1,22 @@
+class PodBabashkaMssql < Formula
+
+  desc "Babashka pod for MSSQL."
+  homepage "https://github.com/babashka/babashka-sql-pods"
+  version "${VERSION}"
+
+  if OS.linux?
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v${VERSION}/pod-babashka-mssql-${VERSION}-linux-amd64.zip"
+    sha256 "${LINUX_SHA}"
+  else
+    url "https://github.com/babashka/babashka-sql-pods/releases/download/v${VERSION}/pod-babashka-mssql-${VERSION}-macos-amd64.zip"
+    sha256 "${MACOS_SHA}"
+  end
+
+  bottle :unneeded
+
+  def install
+    bin.install "pod-babashka-mssql"
+
+  end
+
+end

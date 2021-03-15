@@ -5,10 +5,10 @@ class Babashka < Formula
   version "${VERSION}"
 
   if OS.linux?
-    url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-amd64.zip"
+    url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-amd64.tar.gz"
     sha256 "${LINUX_SHA}"
   else
-    url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-amd64.zip"
+    url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-amd64.tar.gz"
     sha256 "${MACOS_SHA}"
   end
 

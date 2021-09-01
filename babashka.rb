@@ -1,8 +1,8 @@
 class Babashka < Formula
-
-  desc "A Clojure babushka for the grey areas of Bash."
+  desc "Clojure babushka for the grey areas of Bash"
   homepage "https://github.com/borkdude/babashka"
   version "0.6.0"
+  license "EPL-1.0"
 
   if OS.linux?
     url "https://github.com/borkdude/babashka/releases/download/v0.6.0/babashka-0.6.0-linux-amd64.tar.gz"
@@ -17,9 +17,12 @@ class Babashka < Formula
   def install
     bin.install "bb"
 
-# maybe in a future release:
-#    bin.install "bbk"
-
+    # maybe in a future release:
+    #   bin.install "bbk"
   end
 
+  test do
+    assert_equal "hello\n",
+      pipe_output("#{bin}/bb -e '(println \"hello\")'")
+  end
 end

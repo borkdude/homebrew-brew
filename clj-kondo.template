@@ -12,8 +12,6 @@ class CljKondo < Formula
     sha256 "${MACOS_SHA}"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "clj-kondo"
   end

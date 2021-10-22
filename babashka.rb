@@ -12,8 +12,6 @@ class Babashka < Formula
     sha256 "e582cd728c7fd6b71d1d679bac6261b3870ea50c41fb6bb44c4760d8a76550a8"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "bb"
 

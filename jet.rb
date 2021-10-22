@@ -12,8 +12,6 @@ class Jet < Formula
     sha256 "40da55fa93175c795f65eed36094cd670131d6ceb18a0e1886c1b0cab02e9846"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "jet"
   end

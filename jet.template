@@ -12,8 +12,6 @@ class Jet < Formula
     sha256 "${MACOS_SHA}"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "jet"
   end

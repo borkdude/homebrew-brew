@@ -12,8 +12,6 @@ class CljKondo < Formula
     sha256 "1194184eb7a758fa8704a274c4940e8a19f2f7684e668401658eaff228224fd0"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "clj-kondo"
   end

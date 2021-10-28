@@ -12,8 +12,6 @@ class Puget < Formula
     sha256 "${MACOS_SHA}"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "puget"
   end

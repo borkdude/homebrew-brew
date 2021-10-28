@@ -12,8 +12,6 @@ class Puget < Formula
     sha256 "a8a7f573b61cc8ceb2d5080243fb4534ed5861a167d92905810357ea6dc089f6"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "puget"
   end

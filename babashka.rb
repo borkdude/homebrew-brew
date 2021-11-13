@@ -6,7 +6,7 @@ class Babashka < Formula
 
   if OS.linux?
     url "https://github.com/borkdude/babashka/releases/download/v0.6.5/babashka-0.6.5-linux-amd64.tar.gz"
-    sha256 "e41015e7b9f2be8212c9f7b655b1c675feffaaddf0f41a0c064a3d2fe2ce227a"
+    sha256 "55adddd5ddffc0e4c469ae716f5e11ff567dccf7c2bec3f9af6a63f0154beca2"
   else
     url "https://github.com/borkdude/babashka/releases/download/v0.6.5/babashka-0.6.5-macos-amd64.tar.gz"
     sha256 "6108655a72a24dfb5b658fcec81d2285752944ea796cd310d997527e9b7796f6"

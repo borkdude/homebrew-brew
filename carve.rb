@@ -12,8 +12,6 @@ class Carve < Formula
     sha256 "ca69144d7a1190dd816c29d9011e6d4dcd2c19f7fa8605c12dbfe6cdaaf3df40"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "carve"
   end

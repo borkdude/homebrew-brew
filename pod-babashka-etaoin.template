@@ -12,8 +12,6 @@ class PodBabashkaEtaoin < Formula
     sha256 "${MACOS_SHA}"
   end
 
-  bottle :unneeded
-
   def install
     bin.install "pod-babashka-etaoin"
 

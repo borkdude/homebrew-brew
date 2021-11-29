@@ -1,15 +1,15 @@
 class Babashka < Formula
   desc "Clojure babushka for the grey areas of Bash"
   homepage "https://github.com/borkdude/babashka"
-  version "0.6.6"
+  version "0.6.7"
   license "EPL-1.0"
 
   if OS.linux?
-    url "https://github.com/borkdude/babashka/releases/download/v0.6.6/babashka-0.6.6-linux-amd64.tar.gz"
-    sha256 "5bdc67d7cf32397e6e6336756ad7696a57930d24a619e1e9bb3ba0bf82c0c5e9"
+    url "https://github.com/borkdude/babashka/releases/download/v0.6.7/babashka-0.6.7-linux-amd64.tar.gz"
+    sha256 "51c5c4a451a2272e81bd80fabe3826024e79245c11a40f02e0ae42ace20fdf5b"
   else
-    url "https://github.com/borkdude/babashka/releases/download/v0.6.6/babashka-0.6.6-macos-amd64.tar.gz"
-    sha256 "3c6fb3a7b584c2010821de48e2ba0bfa98fd3dc91077571fbba8cd04d9dc88ee"
+    url "https://github.com/borkdude/babashka/releases/download/v0.6.7/babashka-0.6.7-macos-amd64.tar.gz"
+    sha256 "ebefe37178449eed273ac9d2b1d061d2c9732830588c2cb86ab9d204e6cd04bb"
   end
 
   def install

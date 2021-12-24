@@ -1,6 +1,6 @@
 class Babashka < Formula
-  desc "Clojure babushka for the grey areas of Bash"
-  homepage "https://github.com/borkdude/babashka"
+  desc "Native, fast starting Clojure interpreter for scripting."
+  homepage "https://github.com/babashka/babashka"
   version "${VERSION}"
   license "EPL-1.0"
 

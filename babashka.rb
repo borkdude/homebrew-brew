@@ -1,15 +1,15 @@
 class Babashka < Formula
-  desc "Clojure babushka for the grey areas of Bash"
-  homepage "https://github.com/borkdude/babashka"
-  version "0.7.0"
+  desc "Native, fast starting Clojure interpreter for scripting."
+  homepage "https://github.com/babashka/babashka"
+  version "0.7.2"
   license "EPL-1.0"
 
   if OS.linux?
-    url "https://github.com/borkdude/babashka/releases/download/v0.7.0/babashka-0.7.0-linux-amd64.tar.gz"
-    sha256 "963d557941aef1384fdb644c45e75fda71a6ca8acb850b5c3bef1a30cc549a16"
+    url "https://github.com/borkdude/babashka/releases/download/v0.7.2/babashka-0.7.2-linux-amd64.tar.gz"
+    sha256 "eaf9df0df8d63415e7436033525ca373b6e199effadafe77b13dc5c3d71159bb"
   else
-    url "https://github.com/borkdude/babashka/releases/download/v0.7.0/babashka-0.7.0-macos-amd64.tar.gz"
-    sha256 "1d1e5b487e94a34c036596186717076a9e9fb373e9d015be1cec95d8e2fba112"
+    url "https://github.com/borkdude/babashka/releases/download/v0.7.2/babashka-0.7.2-macos-amd64.tar.gz"
+    sha256 "9d163fef77d8c13c94e841ab20b3f25a30230b72fce8295fe22c162f47c08708"
   end
 
   def install

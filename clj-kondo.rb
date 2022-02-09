@@ -2,14 +2,14 @@ class CljKondo < Formula
 
   desc "A minimal and opinionated linter for Clojure code that sparks joy."
   homepage "https://github.com/borkdude/clj-kondo"
-  version "2022.01.15"
+  version "2022.02.09"
 
   if OS.linux?
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2022.01.15/clj-kondo-2022.01.15-linux-amd64.zip"
-    sha256 "2cbcde2c476df7e80bac00aa9204dc5d2bd62151ba0a627d9a47387c84277ae1"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2022.02.09/clj-kondo-2022.02.09-linux-amd64.zip"
+    sha256 "0751a7791b2dd4af40a028384335e2ea50c9ca0c1ab0ba4b5c1fa543d564aed8"
   else
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2022.01.15/clj-kondo-2022.01.15-macos-amd64.zip"
-    sha256 "9e1516bf46eafe63357d41bee3da60e75fe27b9639ed916a421924d9b68f8066"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2022.02.09/clj-kondo-2022.02.09-macos-amd64.zip"
+    sha256 "ab685e1ce47e8887c4d1ab2b186fbc97e0a92e3d20766e27d5a1ab309ecd63aa"
   end
 
   def install

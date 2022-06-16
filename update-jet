@@ -3,7 +3,7 @@
 tag=$(curl --silent "https://api.github.com/repos/borkdude/jet/tags" | jq -r '.[0].name')
 version=${tag:1}
 linux="jet-$version-linux-amd64.zip"
-macos_amd="jet-$version-macos-amd64.zip"
+macos_amd="jet-$version-macos-amd64.tar.gz"
 macos_arm="jet-$version-macos-aarch64.tar.gz"
 
 curl -sLO "https://github.com/borkdude/jet/releases/download/v$version/$linux"

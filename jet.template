@@ -8,8 +8,12 @@ class Jet < Formula
     url "https://github.com/borkdude/jet/releases/download/v${VERSION}/jet-${VERSION}-linux-amd64.zip"
     sha256 "${LINUX_SHA}"
   else
-    url "https://github.com/borkdude/jet/releases/download/v${VERSION}/jet-${VERSION}-macos-amd64.zip"
-    sha256 "${MACOS_SHA}"
+    if Hardware::CPU.arm?
+      url "https://github.com/borkdude/jet/releases/download/v${VERSION}/jet-${VERSION}-macos-aarch64.tar.gz"
+      sha256 "${MACOS_ARM_SHA}"
+    else url "https://github.com/borkdude/jet/releases/download/v${VERSION}/jet-${VERSION}-macos-amd64.zip"
+      sha256 "${MACOS_AMD_SHA}"
+    end
   end
 
   def install

@@ -11,7 +11,7 @@ class Jet < Formula
     if Hardware::CPU.arm?
       url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-macos-aarch64.tar.gz"
       sha256 "be39e84a66feb365fcdc37a94012110eef495d1c131e1b5e718b56c4cacdb554"
-    else url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-macos-amd64.zip"
+    else url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-macos-amd64.tar.gz"
       sha256 "eb784eb961e3a440fda996f1ba58401acb2568f91d3b9e4936959608c2787233"
     end
   end

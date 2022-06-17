@@ -5,7 +5,7 @@ class Jet < Formula
   version "0.2.18"
 
   if OS.linux?
-    url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-linux-amd64.zip"
+    url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-linux-amd64.tar.gz"
     sha256 "327e06d517ec501842b20a85c7a1d771265f1c2034d17f2ccd6a11cb1a026761"
   else
     if Hardware::CPU.arm?

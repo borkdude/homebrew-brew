@@ -10,7 +10,7 @@ class Babashka < Formula
   else
     if Hardware::CPU.arm?
       url "https://github.com/borkdude/babashka/releases/download/v0.9.161/babashka-0.9.161-macos-aarch64.tar.gz"
-      sha256 "eb84370fb18f9a4793f50bf7bdcdd82a90129d8e265f3d619ed1d8dcb713bf7c"
+      sha256 "fc8ac2489560e65939f6147b2f561ae783545842eb0c786441019b126e282266"
     else url "https://github.com/borkdude/babashka/releases/download/v0.9.161/babashka-0.9.161-macos-amd64.tar.gz"
       sha256 "26a473a4a5a6c9d50c6e5763d86e6f01cb49323b41ee68193dca3a48682bc2ac"
     end

@@ -5,9 +5,9 @@ set -euo pipefail
 tag=$(curl --silent "https://api.github.com/repos/clj-kondo/clj-kondo/tags" | jq -r '.[0].name')
 version=${tag:1}
 
-curl -sLO "https://github.com/clj-kondo/clj-kondo/releases/download/v$version/clj-kondo-$version-linux-amd64.zip"
-curl -sLO "https://github.com/clj-kondo/clj-kondo/releases/download/v$version/clj-kondo-$version-macos-amd64.zip"
-curl -sLO "https://github.com/clj-kondo/clj-kondo/releases/download/v$version/clj-kondo-$version-macos-aarch64.zip"
+curl --show-error --fail -sLO "https://github.com/clj-kondo/clj-kondo/releases/download/v$version/clj-kondo-$version-linux-amd64.zip"
+curl --show-error --fail -sLO "https://github.com/clj-kondo/clj-kondo/releases/download/v$version/clj-kondo-$version-macos-amd64.zip"
+curl --show-error --fail -sLO "https://github.com/clj-kondo/clj-kondo/releases/download/v$version/clj-kondo-$version-macos-aarch64.zip"
 
 linux="clj-kondo-$version-linux-amd64.zip"
 macos_arm="clj-kondo-$version-macos-aarch64.zip"

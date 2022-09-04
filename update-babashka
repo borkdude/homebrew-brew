@@ -9,9 +9,9 @@ linux="babashka-$version-linux-amd64.tar.gz"
 macos_amd="babashka-$version-macos-amd64.tar.gz"
 macos_arm="babashka-$version-macos-aarch64.tar.gz"
 
-curl -sLO "https://github.com/babashka/babashka/releases/download/v$version/$linux"
-curl -sLO "https://github.com/babashka/babashka/releases/download/v$version/$macos_amd"
-curl -sLO "https://github.com/babashka/babashka/releases/download/v$version/$macos_arm"
+curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$linux"
+curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$macos_amd"
+curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$macos_arm"
 
 linux_sha=$(sha256sum "$linux" | cut -f 1 -d " ")
 macos_amd_sha=$(sha256sum "$macos_amd" | cut -f 1 -d " ")

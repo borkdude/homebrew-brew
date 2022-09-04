@@ -12,7 +12,7 @@ class Babashka < Formula
       url "https://github.com/borkdude/babashka/releases/download/v0.9.162/babashka-0.9.162-macos-aarch64.tar.gz"
       sha256 "d9095d354e67a09e29a1883e1e34b81ee2c5114b55f10783245b2d14d2d967ea"
     else url "https://github.com/borkdude/babashka/releases/download/v0.9.162/babashka-0.9.162-macos-amd64.tar.gz"
-      sha256 "dcc882dd5f6892c099fd8d9cab4d352d3de5a85966fe05976d2b966695d5b0ee"
+      sha256 "1397388bbf0b8b9d40038344a708afa0f37b7925792012f64c2d8c4b1ac42026"
     end
   end
 

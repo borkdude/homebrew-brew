@@ -10,7 +10,7 @@ class CljKondo < Formula
   else
     if Hardware::CPU.arm?
       url "https://github.com/borkdude/clj-kondo/releases/download/v2022.10.05/clj-kondo-2022.10.05-macos-aarch64.zip"
-      sha256 "6714ccf3f5484a74ae259baeea5bb9e19f163ba36ec39ea6e6fc10a06df87d60"
+      sha256 "809804f2a8560a264dec8d5c38e4fbdaa9d4bb338cbca9c1ea09bef85412236d"
     else
       url "https://github.com/borkdude/clj-kondo/releases/download/v2022.10.05/clj-kondo-2022.10.05-macos-amd64.zip"
       sha256 "1685424d7e4957a8338fd27809a4ef5819f3c0f2e40679c9ea1fc2354b8ae01c"

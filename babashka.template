@@ -5,13 +5,13 @@ class Babashka < Formula
   license "EPL-1.0"
 
   if OS.linux?
-    url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-amd64.tar.gz"
+    url "https://github.com/babashka/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-amd64.tar.gz"
     sha256 "${LINUX_SHA}"
   else
     if Hardware::CPU.arm?
-      url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-aarch64.tar.gz"
+      url "https://github.com/babashka/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-aarch64.tar.gz"
       sha256 "${MACOS_ARM_SHA}"
-    else url "https://github.com/borkdude/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-amd64.tar.gz"
+    else url "https://github.com/babashka/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-amd64.tar.gz"
       sha256 "${MACOS_AMD_SHA}"
     end
   end

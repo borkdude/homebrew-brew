@@ -2,17 +2,17 @@ class Jet < Formula
 
   desc "Transform JSON into EDN into Transit."
   homepage "https://github.com/borkdude/jet"
-  version "0.2.18"
+  version "0.3.21"
 
   if OS.linux?
-    url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-linux-amd64.tar.gz"
-    sha256 "327e06d517ec501842b20a85c7a1d771265f1c2034d17f2ccd6a11cb1a026761"
+    url "https://github.com/borkdude/jet/releases/download/v0.3.21/jet-0.3.21-linux-amd64.tar.gz"
+    sha256 "c814c4275640fac5f70428f11ab57699faf88e6bcac7943cf1561a1fac0b8295"
   else
     if Hardware::CPU.arm?
-      url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-macos-aarch64.tar.gz"
-      sha256 "be39e84a66feb365fcdc37a94012110eef495d1c131e1b5e718b56c4cacdb554"
-    else url "https://github.com/borkdude/jet/releases/download/v0.2.18/jet-0.2.18-macos-amd64.tar.gz"
-      sha256 "eb784eb961e3a440fda996f1ba58401acb2568f91d3b9e4936959608c2787233"
+      url "https://github.com/borkdude/jet/releases/download/v0.3.21/jet-0.3.21-macos-aarch64.tar.gz"
+      sha256 "de36d2908023eeea2a9821aeb760986b7b600687f3bd42b84a99f3a007d897fe"
+    else url "https://github.com/borkdude/jet/releases/download/v0.3.21/jet-0.3.21-macos-amd64.tar.gz"
+      sha256 "6455e2bca4a0b7b1f1bdabbf6efe6ec9be2f81d62037183d6f81f4b45b85b659"
     end
   end
 

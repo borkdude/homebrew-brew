@@ -5,7 +5,7 @@ class CljKondo < Formula
   version "${VERSION}"
 
   if OS.linux?
-    url "https://github.com/borkdude/clj-kondo/releases/download/v${VERSION}/clj-kondo-${VERSION}-linux-amd64.zip"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v${VERSION}/clj-kondo-${VERSION}-linux-static-amd64.zip"
     sha256 "${LINUX_SHA}"
   else
     if Hardware::CPU.arm?

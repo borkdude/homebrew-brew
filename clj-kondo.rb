@@ -5,8 +5,8 @@ class CljKondo < Formula
   version "2022.12.08"
 
   if OS.linux?
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2022.12.08/clj-kondo-2022.12.08-linux-amd64.zip"
-    sha256 "97a861b98e00c64dc5fc9e346e7a344006fb406e06b68b602ca516db865f0f7b"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2022.12.08/clj-kondo-2022.12.08-linux-static-amd64.zip"
+    sha256 "6596037e6cdaff9b70226a73b3d79c56c355943bd9789e84cdb7fa7efbdc4028"
   else
     if Hardware::CPU.arm?
       url "https://github.com/borkdude/clj-kondo/releases/download/v2022.12.08/clj-kondo-2022.12.08-macos-aarch64.zip"

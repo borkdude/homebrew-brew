@@ -5,7 +5,7 @@ set -euo pipefail
 tag=$(curl --silent "https://api.github.com/repos/babashka/babashka/tags" | jq -r '.[0].name')
 version=${tag:1}
 
-linux="babashka-$version-linux-amd64.tar.gz"
+linux="babashka-$version-linux-amd64-static.tar.gz"
 macos_amd="babashka-$version-macos-amd64.tar.gz"
 macos_arm="babashka-$version-macos-aarch64.tar.gz"
 

@@ -10,7 +10,7 @@ class Jet < Formula
   else
     if Hardware::CPU.arm?
       url "https://github.com/borkdude/jet/releases/download/v0.6.26/jet-0.6.26-macos-aarch64.tar.gz"
-      sha256 "dcd616009706ff2acf2bfa29c90009e116939de8acb93a1e4d18782e80cd0ef9"
+      sha256 "102ea5962c6d8affc560a94ca8377789eda428c01d8838c09bc550fbe402c208"
     else url "https://github.com/borkdude/jet/releases/download/v0.6.26/jet-0.6.26-macos-amd64.tar.gz"
       sha256 "3626b19df214ee5c5aff5923e1e00475f9577cacec2779d9d26d2842c7e7bfe2"
     end

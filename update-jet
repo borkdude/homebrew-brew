@@ -1,5 +1,7 @@
 #!/usr/bin/env /bin/bash
 
+set -euo pipefail
+
 tag=$(curl --silent "https://api.github.com/repos/borkdude/jet/tags" | jq -r '.[0].name')
 version=${tag:1}
 linux="jet-$version-linux-amd64.tar.gz"

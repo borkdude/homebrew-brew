@@ -5,20 +5,24 @@ set -euo pipefail
 tag=$(curl --silent "https://api.github.com/repos/babashka/babashka/tags" | jq -r '.[0].name')
 version=${tag:1}
 
-linux="babashka-$version-linux-amd64-static.tar.gz"
+linux_amd="babashka-$version-linux-amd64-static.tar.gz"
+linux_arm="babashka-$version-linux-aarch64-static.tar.gz"
 macos_amd="babashka-$version-macos-amd64.tar.gz"
 macos_arm="babashka-$version-macos-aarch64.tar.gz"
 
-curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$linux"
+curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$linux_amd"
+curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$linux_arm"
 curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$macos_amd"
 curl --show-error --fail -sLO "https://github.com/babashka/babashka/releases/download/v$version/$macos_arm"
 
-linux_sha=$(sha256sum "$linux" | cut -f 1 -d " ")
+linux_amd_sha=$(sha256sum "$linux_amd" | cut -f 1 -d " ")
+linux_arm_sha=$(sha256sum "$linux_arm" | cut -f 1 -d " ")
 macos_amd_sha=$(sha256sum "$macos_amd" | cut -f 1 -d " ")
 macos_arm_sha=$(sha256sum "$macos_arm" | cut -f 1 -d " ")
 
 sed -e "s/\${i}/1/" -e "s/\${VERSION}/$version/g" \
-    -e "s/\${LINUX_SHA}/$linux_sha/g" \
+    -e "s/\${LINUX_AMD_SHA}/$linux_amd_sha/g" \
+    -e "s/\${LINUX_ARM_SHA}/$linux_arm_sha/g" \
     -e "s/\${MACOS_AMD_SHA}/$macos_amd_sha/g" \
     -e "s/\${MACOS_ARM_SHA}/$macos_arm_sha/g" \
     babashka.template > babashka.rb

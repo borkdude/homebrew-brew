@@ -5,8 +5,13 @@ class Babashka < Formula
   license "EPL-1.0"
 
   if OS.linux?
-    url "https://github.com/babashka/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-amd64-static.tar.gz"
-    sha256 "${LINUX_SHA}"
+    if Hardware::CPU.arm?
+      url "https://github.com/babashka/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-aarch64-static.tar.gz"
+      sha256 "${LINUX_ARM_SHA}"
+    else
+      url "https://github.com/babashka/babashka/releases/download/v${VERSION}/babashka-${VERSION}-linux-amd64-static.tar.gz"
+      sha256 "${LINUX_AMD_SHA}"
+    end
   else
     if Hardware::CPU.arm?
       url "https://github.com/babashka/babashka/releases/download/v${VERSION}/babashka-${VERSION}-macos-aarch64.tar.gz"

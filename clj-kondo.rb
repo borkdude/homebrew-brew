@@ -2,18 +2,18 @@ class CljKondo < Formula
 
   desc "A minimal and opinionated linter for Clojure code that sparks joy."
   homepage "https://github.com/borkdude/clj-kondo"
-  version "2026.04.15"
+  version "2026.05.25"
 
   if OS.linux?
-    url "https://github.com/borkdude/clj-kondo/releases/download/v2026.04.15/clj-kondo-2026.04.15-linux-static-amd64.zip"
-    sha256 "183333094581935057eab4b90c19591eb98b386f5bcf0310114159bd43f45b1c"
+    url "https://github.com/borkdude/clj-kondo/releases/download/v2026.05.25/clj-kondo-2026.05.25-linux-static-amd64.zip"
+    sha256 "ba8742f90555332852a3f63260611ca75cc7ba4e2b6dfe601bf5011bb9402b45"
   else
     if Hardware::CPU.arm?
-      url "https://github.com/borkdude/clj-kondo/releases/download/v2026.04.15/clj-kondo-2026.04.15-macos-aarch64.zip"
-      sha256 "f22182837bf82c8869b275f2778231fa79511c546f903bf3c6fc0ec99fb030b0"
+      url "https://github.com/borkdude/clj-kondo/releases/download/v2026.05.25/clj-kondo-2026.05.25-macos-aarch64.zip"
+      sha256 "595e2dcac9e2c8f355e41f406583bcd26851bb2d192f71f4d7ec169d16004b97"
     else
-      url "https://github.com/borkdude/clj-kondo/releases/download/v2026.04.15/clj-kondo-2026.04.15-macos-amd64.zip"
-      sha256 "4298a2d64cc5b706f1c4f4b4e88f0d5ef6136ac79441928b780243ed959e5492"
+      url "https://github.com/borkdude/clj-kondo/releases/download/v2026.05.25/clj-kondo-2026.05.25-macos-amd64.zip"
+      sha256 "c54a5e2af73e943e51a48801605d61d4e45e234dc3a62034cf4807a61d12ad23"
     end
   end
 

@@ -1,23 +1,23 @@
 class Babashka < Formula
   desc "Native, fast starting Clojure interpreter for scripting."
   homepage "https://github.com/babashka/babashka"
-  version "1.13.219"
+  version "1.13.220"
   license "EPL-1.0"
 
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/babashka/babashka/releases/download/v1.13.219/babashka-1.13.219-linux-aarch64-static.tar.gz"
-      sha256 "e8d7a9c66c364b80627a43cb6ba5c14fb6ac7e4af114e8e5d80f97551ccdfe11"
+      url "https://github.com/babashka/babashka/releases/download/v1.13.220/babashka-1.13.220-linux-aarch64-static.tar.gz"
+      sha256 "0efd6ef36b93ea2f0ae6ebf9d1bcd1a66167c2f41c17e990659aa067654437e8"
     else
-      url "https://github.com/babashka/babashka/releases/download/v1.13.219/babashka-1.13.219-linux-amd64-static.tar.gz"
-      sha256 "9ac1fe988d7001625b30ef3e3307e67f8545505a7cb49a4aa179f578115a3e09"
+      url "https://github.com/babashka/babashka/releases/download/v1.13.220/babashka-1.13.220-linux-amd64.tar.gz"
+      sha256 "5211ebf6267be2dbbf4857611cb01331b865bf6b0a8c9bc500c83a816df1a769"
     end
   else
     if Hardware::CPU.arm?
-      url "https://github.com/babashka/babashka/releases/download/v1.13.219/babashka-1.13.219-macos-aarch64.tar.gz"
-      sha256 "57a45df1cee534081375f35d39a3cb5f334956e6d429e364adbf46e296d52cfb"
-    else url "https://github.com/babashka/babashka/releases/download/v1.13.219/babashka-1.13.219-macos-amd64.tar.gz"
-      sha256 "a26e2640d813d676682b5aa4244863fdb4da022802684d2da1183e612456b101"
+      url "https://github.com/babashka/babashka/releases/download/v1.13.220/babashka-1.13.220-macos-aarch64.tar.gz"
+      sha256 "f7d18c3ab11bb4ad0e32a45c1ae40ae25911d5fa06ba4ded07cb90b8af158077"
+    else url "https://github.com/babashka/babashka/releases/download/v1.13.220/babashka-1.13.220-macos-amd64.tar.gz"
+      sha256 "ebbfdf159e8d5ee8b7015b15c6558b2039fe76478de893cf317c8c50805340de"
     end
   end
 
